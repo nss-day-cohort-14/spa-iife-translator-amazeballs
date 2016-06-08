@@ -2,7 +2,7 @@ var languageTranslator = (function () {
 
 //private variables
 
-var translatedText = null;
+var translatedText = [];
 
 return {
 
@@ -10,7 +10,10 @@ return {
     return translatedText;
   }
 
-  
+  translateTxt: function (translatedWord) {
+    translatedText += translatedWord;
+  }
+
   
 }
 

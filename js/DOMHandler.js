@@ -2,12 +2,12 @@
 
 
 function translator () {
-  outputArea.innerHTML += "<p>Test</p>"
+
   console.log("userInput:", userInput.value);
 
   console.log("button clicked:", event.target.id);
 
-  languageTranslator[event.target.id]
+
 
 }
 
