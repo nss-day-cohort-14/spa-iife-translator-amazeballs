@@ -30,4 +30,4 @@ var languageTranslator = (function(maker) {
 
       return maker;
 
-    }(languageTranslator);
+    })(languageTranslator);
