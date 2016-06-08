@@ -1,4 +1,4 @@
-var languageTranslator = (function(translator) {
+var languageTranslator = (function(maker) {
 
   console.log("french.js is loaded");
 
