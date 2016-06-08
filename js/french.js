@@ -16,12 +16,15 @@ var languageTranslator = (function(maker) {
     };
 
 
-      maker.frenchTranslate = function(inputArray) {
+      maker.frenchTranslate = function() {
+
         for (var i = 0; i < inputArray.length; i++) {
-          if (frenchWords[inputArray[i]] === undefined) {
-            throw console.log("word not in lexicon");
+          var currentWord = frenchWords[inputArray[i]]
+          if (currentWord === undefined) {
+            console.log("word not in lexicon");
           } else {
-            languageTranslator.tranlateTxt(inputArray[i]);
+            
+            return languageTranslator.translateTxt(currentWord);
           }
         } 
       }
