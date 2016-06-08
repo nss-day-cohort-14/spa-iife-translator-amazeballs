@@ -1,18 +1,24 @@
 
 
 
+
+
 function translator () {
 
   console.log("userInput:", userInput.value);
 
   console.log("button clicked:", event.target.id);
 
+  var inputText = userInput.value;
 
-  var inputArray = userInput.value;
-  inputArray = inputArray.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" "); 
+  // var inputArray = userInput.value;
+  inputArray = inputText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" "); 
 
+  console.log("usr input", inputText);
+  console.log("inputArray", inputArray);
 
-  return inputArray
+  languageTranslator.frenchTranslate(inputArray);
+
 }
 
 
@@ -20,15 +26,18 @@ function translator () {
 
 
 //get button elements by id
-var userInput = document.getElementById("userInput")
 
-var outputArea = document.getElementById("outputArea")
+var inputArray;
 
-var germanButton = document.getElementById("german")
+var userInput = document.getElementById("userInput");
 
-var frenchButton = document.getElementById("french")
+var outputArea = document.getElementById("outputArea");
 
-var japaneseButton = document.getElementById("japanese")
+var germanButton = document.getElementById("german");
+
+var frenchButton = document.getElementById("french");
+
+var japaneseButton = document.getElementById("japanese");
 
 
 // add event listeners
