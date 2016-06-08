@@ -8,7 +8,11 @@ function translator () {
   console.log("button clicked:", event.target.id);
 
 
+  var inputArray = userInput.value;
+  inputArray = inputArray.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" "); 
 
+
+  return inputArray
 }
 
 
