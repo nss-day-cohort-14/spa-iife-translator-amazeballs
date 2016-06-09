@@ -19,6 +19,8 @@ function translator () {
 
   languageTranslator.frenchTranslate(inputArray);
 
+  languageTranslator.germanTranslate(inputArray);
+
 }
 
 

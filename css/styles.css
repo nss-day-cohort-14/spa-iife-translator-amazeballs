@@ -1,0 +1,136 @@
+/***********
+GENERAL
+***********/
+
+body {
+	margin: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #d3d3d3;
+}
+
+
+/***********
+CARD STYLING
+***********/
+
+.outerDiv {
+	background-color: #f9f9f9;
+	height: 550px;
+	width: 900px;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	border: 3px solid rgba(212, 100, 100, .6);
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+}
+
+#mainDiv {
+	background-color: #9fdfb0;
+	height: 480px;
+	width: 830px;
+	margin: auto;
+	margin-top: 2.8%;
+	border-radius: 3px;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 55px;
+	color: #d46464;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 22px;
+	position: relative;
+	top: 80px;
+	left: 60px;
+}
+
+h2 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 40px;
+	position: relative;
+	top: 70px;
+	left: 160px;
+}
+
+textarea {
+	position: relative;
+	left: 256px;
+	top: 30px;
+	width: 300px;
+}
+
+p {
+	text-align: center;
+	top: 30px;
+	position: relative;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+button {
+	position: relative;
+	margin-right: 8px;
+	left: 280px;
+	top: 30px;
+	height: 30px;
+	width: 80px;
+}
+
+
+/***********
+IMG STYLING
+***********/
+
+
+.wreathRight {
+	height: 170px;
+	width: 140px;
+	position: absolute;
+	left: 1066px;
+	top: 105px;
+	transform: rotate(30deg);
+}
+
+.flake {
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	opacity: .3;
+	left: 865px;
+	top: 390px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
