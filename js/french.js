@@ -18,6 +18,7 @@ var languageTranslator = (function(maker) {
 
       maker.frenchTranslate = function() {
 
+
         for (var i = 0; i < inputArray.length; i++) {
 
           console.log("inputArray.length", inputArray.length);
