@@ -1,6 +1,5 @@
 var languageTranslator = (function(maker) {
 
-	console.log("german.js is loaded");
 
 
 
@@ -22,12 +21,10 @@ var languageTranslator = (function(maker) {
 
         for (var i = 0; i < inputArray.length; i++) {
 
-          console.log("inputArray.length", inputArray.length);
 
           var currentWord = germanWords[inputArray[i]]
 
           if (currentWord === undefined) {
-            console.log("word not in lexicon");
             languageTranslator.translateTxt("[word not in lexicon]");
           } else {
             

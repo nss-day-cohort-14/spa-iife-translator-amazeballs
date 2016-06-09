@@ -12,7 +12,6 @@ return {
 
   translateTxt: function (translatedWord) {
     translatedText.push(translatedWord);
-    console.log("translatedText", translatedText);
   },
 
   reassembleOutput: function() {
