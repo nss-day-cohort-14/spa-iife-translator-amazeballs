@@ -17,7 +17,7 @@ return {
 
   reassembleOutput: function() {
     // console.log(translatedText.join(" "));
-    outputArea.innerHTML = "";esawzQSZD
+    outputArea.innerHTML = " ";
     outputArea.innerHTML = translatedText.join(" ");
   }
 }

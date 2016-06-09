@@ -64,9 +64,11 @@ h2 {
 
 textarea {
 	position: relative;
-	left: 256px;
+	left: 180px;
 	top: 30px;
-	width: 300px;
+	width: 200px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
 }
 
 p {
@@ -85,6 +87,23 @@ button {
 	top: 30px;
 	height: 30px;
 	width: 80px;
+	border-radius: 8px;
+	background-color: #d46464;
+	color: white;
+	outline: 0;
+}
+
+#outputArea {
+	background-color: white;
+	height: 64px;
+	width: 210px;
+	position: relative;
+	bottom: 289px;
+	left: 430px;
+	border: 1px solid grey;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
 }
 
 
