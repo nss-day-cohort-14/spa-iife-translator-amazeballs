@@ -17,6 +17,7 @@ return {
 
   reassembleOutput: function() {
     // console.log(translatedText.join(" "));
+
     outputArea.innerHTML = "";
     var finalText = translatedText.join(" ");
     outputArea.innerHTML = finalText;
