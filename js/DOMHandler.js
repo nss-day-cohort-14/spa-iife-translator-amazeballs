@@ -1,13 +1,12 @@
 
 
-
-
-
 function translator () {
 
   console.log("userInput:", userInput.value);
 
   console.log("button clicked:", event.target.id);
+
+  var selectedLanguage = event.target.id;
 
   var inputText = userInput.value;
 
@@ -17,7 +16,7 @@ function translator () {
   console.log("usr input", inputText);
   console.log("inputArray", inputArray);
 
-  languageTranslator.frenchTranslate(inputArray);
+  languageTranslator[selectedLanguage](inputArray);
 
   languageTranslator.germanTranslate(inputArray);
 
@@ -35,11 +34,11 @@ var userInput = document.getElementById("userInput");
 
 var outputArea = document.getElementById("outputArea");
 
-var germanButton = document.getElementById("german");
+var germanButton = document.getElementById("germanTranslate");
 
-var frenchButton = document.getElementById("french");
+var frenchButton = document.getElementById("frenchTranslate");
 
-var japaneseButton = document.getElementById("japanese");
+var japaneseButton = document.getElementById("japaneseTranslate");
 
 
 // add event listeners
