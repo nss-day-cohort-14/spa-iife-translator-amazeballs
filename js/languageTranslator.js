@@ -17,8 +17,10 @@ return {
 
   reassembleOutput: function() {
     // console.log(translatedText.join(" "));
-    outputArea.innerHTML = " ";
+
+    outputArea.innerHTML = "";
     outputArea.innerHTML = translatedText.join(" ");
+    translatedText = [];
   }
 }
 

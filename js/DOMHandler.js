@@ -11,14 +11,14 @@ function translator () {
   var inputText = userInput.value;
 
   // var inputArray = userInput.value;
+
+  inputArray = [];
   inputArray = inputText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" "); 
 
   console.log("usr input", inputText);
   console.log("inputArray", inputArray);
 
   languageTranslator[selectedLanguage](inputArray);
-
-  languageTranslator.germanTranslate(inputArray);
 
 }
 
