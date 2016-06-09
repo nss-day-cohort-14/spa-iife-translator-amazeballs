@@ -13,6 +13,12 @@ function translator () {
   // var inputArray = userInput.value;
 
   inputArray = [];
+  inputText = inputText.replace(/\s{2,}/g," ");
+
+  if (inputText[inputText.length - 1]=== " " ) {
+  	inputText = inputText.slice(0, -1);
+  };
+
   inputArray = inputText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" "); 
 
   console.log("usr input", inputText);
