@@ -18,6 +18,8 @@ function translator () {
 
   languageTranslator[selectedLanguage](inputArray);
 
+  languageTranslator.germanTranslate(inputArray);
+
 }
 
 
