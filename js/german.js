@@ -16,22 +16,31 @@ var languageTranslator = (function(maker) {
 	
 	};
 
-	maker.germanTranslate = function() {
 
-		for (var i = 0; i < inputArray.length; i++) {
-			var currentWord = germanWords[inputArray[i]]
-			if (currentWord === undefined) {
-				console.log("Word not in lexicon");
-			} else {
-
-				return languageTranslator.translateTxt(currentWord);
-			}
-		}
-	}
+      maker.germanTranslate = function() {
 
 
+        for (var i = 0; i < inputArray.length; i++) {
+
+          console.log("inputArray.length", inputArray.length);
+
+          var currentWord = germanWords[inputArray[i]]
+
+          if (currentWord === undefined) {
+            console.log("word not in lexicon");
+            languageTranslator.translateTxt("[word not in lexicon]");
+          } else {
+            
+            languageTranslator.translateTxt(currentWord);
+          }
+        } 
+
+        languageTranslator.reassembleOutput();
+      }
 
 
-	return maker;
+      return maker;
 
-})(languageTranslator);
+    })(languageTranslator);
+
+
