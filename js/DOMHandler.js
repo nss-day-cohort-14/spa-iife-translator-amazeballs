@@ -2,9 +2,6 @@
 
 function translator () {
 
-  console.log("userInput:", userInput.value);
-
-  console.log("button clicked:", event.target.id);
 
   var selectedLanguage = event.target.id;
 
@@ -21,8 +18,6 @@ function translator () {
 
   inputArray = inputText.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(" "); 
 
-  console.log("usr input", inputText);
-  console.log("inputArray", inputArray);
 
   languageTranslator[selectedLanguage](inputArray);
 
