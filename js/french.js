@@ -19,17 +19,23 @@ var languageTranslator = (function(maker) {
       maker.frenchTranslate = function() {
 
         for (var i = 0; i < inputArray.length; i++) {
+
+          console.log("inputArray.length", inputArray.length);
+
           var currentWord = frenchWords[inputArray[i]]
+
           if (currentWord === undefined) {
             console.log("word not in lexicon");
+            languageTranslator.translateTxt("[word not in lexicon]");
           } else {
             
-            return languageTranslator.translateTxt(currentWord);
+            languageTranslator.translateTxt(currentWord);
           }
         } 
+
+        languageTranslator.reassembleOutput();
       }
 
-      
 
       return maker;
 
